@@ -4,7 +4,7 @@ import openpyxl
 import streamlit as st
 import altair as alt
 
-import wmata_dataReader
+import dataReader
 #test
 
 # LAYOUT
