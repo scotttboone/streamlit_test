@@ -1,0 +1,8 @@
+name: streamlit_test
+dependencies:
+  - numpy
+  - pandas
+  - openpyxl
+  - streamlit
+  - altair
+  
