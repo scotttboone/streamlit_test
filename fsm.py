@@ -42,7 +42,7 @@ with tab0_0:
 	with col11:
 		with st.form(key="busform"):
 			st.text("Bus")
-			v_busfare 				= st.slider("Base fare", key="busfare", value=1.5, min_value=0., max_value=5., step=.10, format="$%.2f")
+			v_busfare 				= st.slider("Base fare", key="busfare", value=1., min_value=0., max_value=5., step=.10, format="$%.2f")
 			v_busseniordiscount 	= st.slider("Senior Discount", value=50, min_value=0, max_value=100, step=10, format="%i%%")
 			st.form_submit_button("Apply")			
 			df_fares.loc[(df_fares["Mode"] == "Bus") & (df_fares["FareClass"] == "Standard"), "NewFare"] = v_busfare
