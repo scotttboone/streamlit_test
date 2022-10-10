@@ -12,7 +12,7 @@ st.set_page_config(layout="wide")
 
 st.header('🚇 Fare and Service Modeling Platform 🚇')
 
-df_riders, df_fares, df_elasticities = wmata_dataReader.getData("data.xlsx")
+df_riders, df_fares, df_elasticities = dataReader.getData("data.xlsx")
 
 
 
